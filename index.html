@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>CodevaCore — Yazılım ve Kodlama Stüdyosu</title>
+<meta name="description" content="CodevaCore Yazılım: web geliştirme, mobil uygulama, özel yazılım, otomasyon, oyun ve yapay zekâ destekli çözümlerle fikrinizi çalışan dijital ürüne dönüştürür.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>(function(){ if(window.emailjs) emailjs.init("LfbjhZU0skiyPACM1"); })();</script>
+</head>
+<body>
+<div class="app" id="app">
+
+  <header class="topbar">
+    <a href="#ana-sayfa" class="topbar-logo" aria-label="CodevaCore ana sayfa"><img src="assets/logo.png" alt="CodevaCore Yazılım"></a>
+    <button type="button" class="menu-toggle" id="menuToggle" aria-label="Menüyü aç" aria-expanded="false" aria-controls="sidebar"><span></span></button>
+  </header>
+
+  <aside class="sidebar" id="sidebar" aria-label="Ana menü">
+    <button type="button" class="side-collapse" id="sideCollapse" aria-label="Menüyü daralt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="11 17 6 12 11 7"/><polyline points="18 17 13 12 18 7"/></svg></button>
+    <a href="#ana-sayfa" class="brand" aria-label="CodevaCore ana sayfa"><img src="assets/logo.png" alt="CodevaCore Yazılım"></a>
+    <nav class="menu" id="menu">
+      <a href="#ana-sayfa" data-route="ana-sayfa">Ana Sayfa</a>
+      <a href="#hizmetler" data-route="hizmetler">Hizmetler</a>
+      <a href="#cozumler" data-route="cozumler">Çözümler</a>
+      <a href="#projeler" data-route="projeler">Projeler</a>
+      <a href="#paketler" data-route="paketler">Paketler</a>
+      <a href="#hakkimizda" data-route="hakkimizda">Hakkımızda</a>
+      <a href="#iletisim" data-route="iletisim">İletişim</a>
+    </nav>
+    <div class="side-foot">
+      <a class="side-cta" href="#iletisim" data-quote>Teklif Al</a>
+      <a href="tel:+905431791053">0543 179 10 53</a>
+      <a href="mailto:codevacoreyazilim@gmail.com">codevacoreyazilim@gmail.com</a>
+      <a href="https://instagram.com/codevacoreyazilim" target="_blank" rel="noopener">@codevacoreyazilim</a>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+  <button type="button" class="side-expand" id="sideExpand" aria-label="Menüyü genişlet" aria-controls="sidebar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg></button>
+
+  <main class="stage" id="stage" tabindex="-1">
+
+    <section class="panel" id="ana-sayfa" data-title="Ana Sayfa">
+      <div class="home">
+        <div class="home-copy">
+          <img class="home-logo" src="assets/logo.png" alt="CodevaCore Yazılım">
+          <h1>Fikrinizi Dijital Ürüne Dönüştürüyoruz.</h1>
+          <p class="lead">CodevaCore yalnızca web sitesi yapan bir ekip değil. Web geliştirme, mobil uygulama, özel yazılım, otomasyon, oyun geliştirme ve yapay zekâ destekli çözümlerle fikrinizi baştan sona çalışan bir ürüne çeviriyoruz.</p>
+          <div class="actions">
+            <a href="#iletisim" class="btn btn-primary">Projeni Anlat</a>
+            <a href="#cozumler" class="btn btn-ghost">Çözümlerimizi İncele</a>
+          </div>
+        </div>
+        <div class="home-visual" aria-hidden="true">
+          <div class="core-card">
+            <div class="core-bar"><i></i><i></i><i></i><span>codevacore / ürünler</span></div>
+            <ul>
+            <li class="cap-row" style="--i:0"><span class="dot"></span>Web geliştirme</li>
+            <li class="cap-row" style="--i:1"><span class="dot"></span>Mobil uygulama</li>
+            <li class="cap-row" style="--i:2"><span class="dot"></span>Özel yazılım</li>
+            <li class="cap-row" style="--i:3"><span class="dot"></span>Otomasyon</li>
+            <li class="cap-row" style="--i:4"><span class="dot"></span>Oyun geliştirme</li>
+            <li class="cap-row" style="--i:5"><span class="dot"></span>Yapay zekâ destekli çözümler</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="hizmetler" data-title="Hizmetler">
+      <header class="panel-head"><h2>Hizmetler</h2><p>Web sitesinin ötesinde: fikrinizi çalışan bir dijital ürüne dönüştüren geliştirme hizmetleri.</p></header>
+      <div class="svc-grid">
+        <article class="card svc">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/></svg></span>
+          <h3>Web Geliştirme</h3>
+          <p>Modern, hızlı ve responsive web siteleri.</p>
+        </article>
+        <article class="card svc">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></span>
+          <h3>Mobil Uygulama Geliştirme</h3>
+          <p>Android ve iOS mobil uygulamalar.</p>
+        </article>
+        <article class="card svc">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+          <h3>Özel Yazılım</h3>
+          <p>İşletmelere ve projelere özel yazılım sistemleri.</p>
+        </article>
+        <article class="card svc">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span>
+          <h3>Otomasyon</h3>
+          <p>Tekrarlayan iş süreçlerini kolaylaştıran otomasyon sistemleri.</p>
+        </article>
+        <article class="card svc">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="5"/><path d="M6 12h4M8 10v4"/><circle cx="15.5" cy="11" r=".8"/><circle cx="17.5" cy="13" r=".8"/></svg></span>
+          <h3>Oyun Geliştirme</h3>
+          <p>Mobil ve farklı platformlara yönelik oyun projeleri.</p>
+        </article>
+        <article class="card svc">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx=".8"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></span>
+          <h3>Yapay Zekâ Destekli Çözümler</h3>
+          <p>AI destekli yazılım, otomasyon ve uygulama çözümleri.</p>
+        </article>
+      </div>
+      <div class="svc-cta">
+        <h3>Projeniz için ne geliştirebiliriz?</h3>
+        <a href="#iletisim" class="btn btn-primary" data-quote>Teklif Al</a>
+      </div>
+    </section>
+
+    <section class="panel" id="cozumler" data-title="Çözümler">
+      <header class="panel-head"><h2>Çözümler</h2><p>Fikrinizi, ihtiyacınıza uygun bir dijital çözüme dönüştürebiliyoruz. İşte sunabildiklerimiz.</p></header>
+      <div class="sol-grid">
+        <article class="card sol">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></span>
+          <div><h3>Web Siteleri</h3><p>Markanızı internette temsil eden, hızlı ve mobil uyumlu web siteleri.</p></div>
+        </article>
+        <article class="card sol">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 6h4M12 18h.01"/></svg></span>
+          <div><h3>Mobil Uygulamalar</h3><p>Müşterilerinize veya ekibinize ulaşan Android ve iOS uygulamaları.</p></div>
+        </article>
+        <article class="card sol">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></span>
+          <div><h3>İşletme Yönetim Sistemleri</h3><p>Sipariş, stok, müşteri ve raporlama gibi işleri tek yerden yönetmenizi sağlayan sistemler.</p></div>
+        </article>
+        <article class="card sol">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span>
+          <div><h3>Özel Yazılım Sistemleri</h3><p>Hazır programlara sığmayan ihtiyaçlar için size özel geliştirilen yazılımlar.</p></div>
+        </article>
+        <article class="card sol">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg></span>
+          <div><h3>Otomasyon Sistemleri</h3><p>Tekrarlayan işleri otomatikleştirerek zaman kazandıran iş akışları.</p></div>
+        </article>
+        <article class="card sol">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 16l.7 1.8 1.8.7-1.8.7L19 21l-.7-1.8-1.8-.7 1.8-.7z"/></svg></span>
+          <div><h3>Yapay Zekâ Entegrasyonları</h3><p>Mevcut site veya yazılımınıza sohbet, öneri ve analiz gibi yapay zekâ özellikleri eklenmesi.</p></div>
+        </article>
+        <article class="card sol">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="5"/><path d="M6 12h4M8 10v4"/><circle cx="15.5" cy="11" r=".8"/><circle cx="17.5" cy="13" r=".8"/></svg></span>
+          <div><h3>Oyunlar</h3><p>Mobil ve farklı platformlar için hazırlanan oyun projeleri.</p></div>
+        </article>
+        <article class="card sol">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></span>
+          <div><h3>Dijital Ürünler</h3><p>Fikrinizi baştan sona planlanmış, kullanıma hazır bir ürüne dönüştürmek.</p></div>
+        </article>
+      </div>
+      <div class="process">
+        <h3>Fikirden çalışan ürüne</h3>
+        <p class="process-sub">Her projede aynı net akışla ilerliyoruz.</p>
+        <ol class="steps">
+          <li><span class="step-no">01</span><h4>Fikri Anlıyoruz</h4><p>Hedefinizi, ihtiyacınızı ve beklentinizi dinliyoruz.</p></li>
+          <li><span class="step-no">02</span><h4>Planlıyoruz</h4><p>Kapsamı, adımları ve kullanılacak teknolojiyi netleştiriyoruz.</p></li>
+          <li><span class="step-no">03</span><h4>Geliştiriyoruz</h4><p>Planı çalışan bir yazılıma dönüştürüyoruz.</p></li>
+          <li><span class="step-no">04</span><h4>Test Ediyoruz</h4><p>Ürünü farklı cihaz ve senaryolarda deniyoruz.</p></li>
+          <li><span class="step-no">05</span><h4>Teslim Ediyoruz</h4><p>Ürünü kullanıma hazır halde size teslim ediyoruz.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="panel" id="projeler" data-title="Projeler">
+      <header class="panel-head"><h2>Projeler</h2><p>CodevaCore'un geliştirdiği ve geliştirmekte olduğu projeler.</p></header>
+      <div class="proj-grid" id="projGrid"></div>
+    </section>
+
+    <section class="panel" id="paketler" data-title="Paketler">
+      <header class="panel-head"><h2>Paketler</h2><p>İhtiyacınıza uygun paketi seçin, size özel teklif hazırlayalım. Hepsinde domain ve hosting bizden.</p></header>
+      <div class="grid grid-3">
+        <article class="card pack" data-package-id="tek-sayfali">
+          <span class="badge">Domain + Hosting Bedava</span>
+          <h3>Tek Sayfalı Web Sitesi</h3>
+          <p class="pack-desc">Her şeyin tek sayfada anlatıldığı, hızlı hazırlanan web sitesi.</p>
+          <ul><li>Tek sayfa (landing page) düzeni</li><li>Mobil uyumlu tasarım</li><li>İletişim formu entegrasyonu</li><li>Hızlı teslimat</li></ul>
+          <button type="button" class="btn btn-ghost" data-quote data-package="Tek Sayfalı Web Sitesi" data-package-id="tek-sayfali">Teklif Al</button>
+        </article>
+        <article class="card pack" data-package-id="cok-sayfali">
+          <span class="badge">Domain + Hosting Bedava</span>
+          <h3>Çok Sayfalı Web Sitesi</h3>
+          <p class="pack-desc">Kurumsal, hizmetler ve iletişim gibi birden fazla sayfadan oluşan web sitesi.</p>
+          <ul><li>Çoklu sayfa yapısı (kurumsal, hizmetler, iletişim)</li><li>Yönetim paneli / dinamik içerik</li><li>Gelişmiş SEO ve performans altyapısı</li><li>Detaylı sayfa tasarımları</li></ul>
+          <button type="button" class="btn btn-ghost" data-quote data-package="Çok Sayfalı Web Sitesi" data-package-id="cok-sayfali">Teklif Al</button>
+        </article>
+        <article class="card pack featured" data-package-id="3d-gorselli">
+          <span class="badge">Domain + Hosting Bedava</span>
+          <span class="badge badge-alt">3D ve scrollytelling</span>
+          <h3>3D Görselli Web Sitesi</h3>
+          <p class="pack-desc">3D görseller ve kaydırma animasyonlarıyla öne çıkan interaktif web sitesi.</p>
+          <ul><li>3D interaktif web tasarımı ve obje entegrasyonu</li><li>Scrollytelling animasyonları</li><li>Özel WebGL / Three.js sahnesi</li><li>Yüksek performanslı UX/UI deneyimi</li></ul>
+          <button type="button" class="btn btn-primary" data-quote data-package="3D Görselli Web Sitesi" data-package-id="3d-gorselli">Teklif Al</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="hakkimizda" data-title="Hakkımızda">
+      <header class="panel-head"><h2>Hakkımızda</h2></header>
+      <div class="about">
+        <div class="about-copy">
+          <p class="about-lead">CodevaCore, fikirleri çalışan dijital ürünlere dönüştüren modern bir yazılım geliştirme markasıdır.</p>
+          <p>Bir web tasarım ajansıyla sınırlı kalmıyoruz. Web, mobil uygulama, özel yazılım, otomasyon, oyun ve yapay zekâ destekli çözümler geliştiriyoruz.</p>
+          <p>Her projeye ihtiyacı anlayarak başlıyor, süreci açık tutuyor ve hızlı, sağlam, kullanımı kolay yazılımlar ortaya çıkarmayı hedefliyoruz.</p>
+        </div>
+        <div class="card about-areas">
+          <h3>Neler geliştiriyoruz</h3>
+          <ul><li>Web geliştirme</li><li>Mobil uygulama</li><li>Özel yazılım</li><li>Otomasyon</li><li>Oyun geliştirme</li><li>Yapay zekâ destekli çözümler</li></ul>
+        </div>
+      </div>
+      <div class="grid grid-3 values">
+        <article class="card"><h3>Açık süreç</h3><p>Her aşamada ne olduğunu görürsünüz. Onayınız olmadan kodlamaya geçmeyiz.</p></article>
+        <article class="card"><h3>Temiz ve sağlam kod</h3><p>Onaylanan tasarımı temiz kodla hayata geçirir, mobilde ve masaüstünde akıcı çalışmasını sağlarız.</p></article>
+        <article class="card"><h3>Size uygun çözüm</h3><p>Hazır kalıplar yerine ihtiyacınıza ve projenizin hedefine göre yazılım geliştiririz.</p></article>
+      </div>
+    </section>
+
+    <section class="panel" id="iletisim" data-title="İletişim">
+      <header class="panel-head"><h2>İletişim</h2><p>Projenizi anlatın, size en kısa sürede dönüş yapalım. Ücretsiz ön görüşme için bize doğrudan da ulaşabilirsiniz.</p></header>
+      <div class="ch-grid">
+        <a class="card ch" href="mailto:codevacoreyazilim@gmail.com">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg></span>
+          <span class="ch-label">E-posta</span><span class="ch-val">codevacoreyazilim@gmail.com</span>
+        </a>
+        <a class="card ch" href="tel:+905431791053">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <span class="ch-label">Telefon</span><span class="ch-val">0543 179 10 53</span>
+        </a>
+        <a class="card ch" href="https://instagram.com/codevacoreyazilim" target="_blank" rel="noopener">
+          <span class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg></span>
+          <span class="ch-label">Instagram</span><span class="ch-val">@codevacoreyazilim</span>
+        </a>
+      </div>
+      <div class="ch-cta">
+        <div><h3>Projenizi bize anlatın</h3><p>Ne geliştirmek istediğinizi kısaca yazın, size özel teklif hazırlayalım.</p></div>
+        <div class="ch-actions">
+          <button type="button" class="btn btn-primary" data-quote>Projenizi Anlatın</button>
+          <button type="button" class="btn btn-ghost" data-quote>Teklif Al</button>
+        </div>
+      </div>
+      <p class="ch-legal">Gönderdiğiniz bilgiler yalnızca talebinizle ilgilenmek için kullanılır. <button type="button" class="link" id="openLegal">KVKK aydınlatma metni</button></p>
+    </section>
+
+    <div class="site-end">
+      <section class="end-cta" aria-labelledby="endCtaTitle">
+        <div>
+          <h2 id="endCtaTitle">Bir fikriniz mi var?</h2>
+          <p>Birlikte geliştirelim.</p>
+        </div>
+        <button type="button" class="btn btn-light" data-quote>Teklif Al</button>
+      </section>
+      <footer class="foot">
+        <div class="foot-grid">
+          <div class="foot-brand">
+            <a href="#ana-sayfa" aria-label="CodevaCore ana sayfa"><img src="assets/logo.png" alt="CodevaCore Yazılım"></a>
+            <p>CodevaCore; web, mobil uygulama, özel yazılım, otomasyon, oyun ve yapay zekâ destekli çözümler geliştiren modern bir yazılım markasıdır.</p>
+          </div>
+          <nav class="foot-col" aria-label="Hızlı menü">
+            <h4>Hızlı Menü</h4>
+            <a href="#hizmetler">Hizmetler</a>
+            <a href="#cozumler">Çözümler</a>
+            <a href="#projeler">Projeler</a>
+            <a href="#paketler">Paketler</a>
+            <a href="#hakkimizda">Hakkımızda</a>
+            <a href="#iletisim">İletişim</a>
+          </nav>
+          <div class="foot-col">
+            <h4>İletişim</h4>
+            <a href="mailto:codevacoreyazilim@gmail.com">codevacoreyazilim@gmail.com</a>
+            <a href="tel:+905431791053">0543 179 10 53</a>
+          </div>
+          <div class="foot-col">
+            <h4>Sosyal Medya</h4>
+            <a href="https://instagram.com/codevacoreyazilim" target="_blank" rel="noopener">Instagram: @codevacoreyazilim</a>
+          </div>
+        </div>
+        <p class="foot-copy">© 2026 CodevaCore Yazılım. Tüm hakları saklıdır.</p>
+      </footer>
+    </div>
+  </main>
+</div>
+
+<div class="drawer-scrim" id="quoteScrim" data-quote-close></div>
+<aside class="drawer" id="quotePanel" role="dialog" aria-modal="true" aria-labelledby="qTitle" hidden>
+  <header class="drawer-head">
+    <div><h2 id="qTitle">Teklif Al</h2><p>Projenizi kısaca anlatın, size özel teklif hazırlayalım.</p></div>
+    <button type="button" class="drawer-close" data-quote-close aria-label="Paneli kapat"><span></span></button>
+  </header>
+  <div class="drawer-body">
+    <form class="form" id="quoteForm" novalidate>
+      <div class="row">
+        <label for="qFirst">Ad *<input type="text" id="qFirst" autocomplete="given-name" maxlength="40" required aria-describedby="qFirstErr"><span class="q-err" id="qFirstErr"></span></label>
+        <label for="qLast">Soyad *<input type="text" id="qLast" autocomplete="family-name" maxlength="40" required aria-describedby="qLastErr"><span class="q-err" id="qLastErr"></span></label>
+      </div>
+      <label for="qCompany">Şirket Adı<input type="text" id="qCompany" autocomplete="organization" maxlength="80" placeholder="Varsa şirket adınız" aria-describedby="qCompanyErr"><span class="q-err" id="qCompanyErr"></span></label>
+      <label for="qPhone">Telefon *<input type="tel" id="qPhone" autocomplete="tel" maxlength="20" placeholder="05xx xxx xx xx" required aria-describedby="qPhoneErr"><span class="q-err" id="qPhoneErr"></span></label>
+      <label for="qEmail">E-posta *<input type="email" id="qEmail" autocomplete="email" maxlength="100" placeholder="ornek@eposta.com" required aria-describedby="qEmailErr"><span class="q-err" id="qEmailErr"></span></label>
+      <label for="qPackage">İlgilenilen Paket *
+        <select id="qPackage" required aria-describedby="qPackageErr">
+          <option value="Tek Sayfalı Web Sitesi">Tek Sayfalı Web Sitesi</option>
+          <option value="Çok Sayfalı Web Sitesi">Çok Sayfalı Web Sitesi</option>
+          <option value="3D Görselli Web Sitesi">3D Görselli Web Sitesi</option>
+          <option value="Henüz karar vermedim">Henüz karar vermedim</option>
+        </select><span class="q-err" id="qPackageErr"></span>
+      </label>
+      <label for="qNotes">Proje / Talep Açıklaması<textarea id="qNotes" maxlength="1500" placeholder="Ne yapmak istediğinizi kısaca anlatın..." aria-describedby="qNotesErr"></textarea><span class="q-err" id="qNotesErr"></span></label>
+      <div class="q-hp" aria-hidden="true"><label>Web sitesi<input type="text" id="qWebsite" tabindex="-1" autocomplete="off"></label></div>
+      <button type="submit" class="btn btn-primary" id="quoteSubmit">Teklif Talebini Gönder</button>
+      <p class="q-status" id="quoteStatus" role="alert"></p>
+    </form>
+    <div class="q-done" id="quoteDone" hidden>
+      <span class="q-done-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 12.5 10 17.5 19 7.5"/></svg></span>
+      <h3 id="quoteDoneTitle" tabindex="-1">Teklif talebiniz başarıyla gönderildi.</h3>
+      <p>Talebinizi aldık. Ekibimiz en kısa sürede sizinle iletişime geçecek.</p>
+      <button type="button" class="btn btn-ghost" data-quote-close>Kapat</button>
+    </div>
+  </div>
+</aside>
+
+<dialog id="legalModal" class="modal">
+  <h3>KVKK aydınlatma metni</h3>
+  <p>CodevaCore Yazılım, form üzerinden paylaştığınız iletişim ve işletme bilgilerini yalnızca talebinizle ilgilenmek ve size dönüş yapmak amacıyla kullanır; bilgileriniz üçüncü taraflarla paylaşılmaz.</p>
+  <button type="button" class="btn btn-ghost" id="closeLegal">Anladım</button>
+</dialog>
+
+<script src="js/projects.js"></script>
+<script src="js/quote.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
